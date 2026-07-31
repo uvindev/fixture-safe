@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "loop_id": "iamuvin-1000-projects",
+  "goal": "Ship 1000 distinct useful revenue-capable software projects",
+  "status": "active",
+  "iteration": 1,
+  "limits": {
+    "projects_per_task": 1,
+    "selection_attempts": 3,
+    "consecutive_failures_per_node": 3,
+    "total_node_attempts": 18,
+    "elapsed_hours": 8,
+    "unapproved_spend_usd": 0
+  },
+  "active_node": "ship",
+  "active_project": 1,
+  "completed_nodes": ["orient", "research", "specify", "build", "verify"],
+  "completed_project_count": 0,
+  "projects": [
+    {
+      "id": 1,
+      "name": "FixtureSafe",
+      "repository_url": null,
+      "local_path": "/Users/Desktop - Uvin’s MacBook Pro/UvinDev/dev/codex_1000_apps/fixture-safe",
+      "product_type": "local-first web application",
+      "target_user": "Integration engineers and agencies handling production-shaped webhook payloads",
+      "recurring_job": "Sanitize captured webhook payloads before sharing or committing fixtures, then reproduce signature checks",
+      "paid_value": "Shared redaction policies, reviewed provider presets, batch fixture packs, and a headless CI check",
+      "monetization_model": "Free local workbench with a Team subscription hypothesis at [TARGET] $12 per team/month",
+      "distribution_channel": "GitHub, developer search, integration agencies, and provider integration communities",
+      "evidence_sources": [
+        "https://docs.stripe.com/webhooks?lang=node",
+        "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+        "https://webhook.site/register",
+        "https://docs.webhook.site/",
+        "https://redocly.com/pricing",
+        "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CSP"
+      ],
+      "assumptions": [
+        "[UNVERIFIED] Integration teams regularly copy production-shaped payloads into tickets, repositories, and AI tools",
+        "[UNVERIFIED] An auditable browser-local sanitizer is preferable to generic JSON formatting for this workflow"
+      ],
+      "node_status": {
+        "orient": "completed",
+        "research": "completed",
+        "specify": "completed",
+        "build": "completed",
+        "verify": "completed",
+        "ship": "in_progress",
+        "record": "pending"
+      },
+      "attempts": {
+        "orient": 1,
+        "research": 1,
+        "specify": 1,
+        "build": 1,
+        "verify": 4,
+        "ship": 1,
+        "record": 0
+      },
+      "commit_sha": null,
+      "pushed_branch": null,
+      "verification": [
+        {
+          "command": "node -e JSON.parse(portfolio-state.json and package.json)",
+          "exit_status": 0,
+          "output": "JSON_OK"
+        },
+        {
+          "command": "deterministic credential-pattern scan",
+          "exit_status": 0,
+          "output": "SECRET_SCAN_OK (deterministic pattern scan)"
+        },
+        {
+          "command": "pnpm audit --audit-level high",
+          "exit_status": 0,
+          "output": "No known vulnerabilities found"
+        },
+        {
+          "command": "pnpm verify",
+          "exit_status": 0,
+          "output": "Prettier passed; ESLint passed; TypeScript passed; 1 test file and 8 tests passed; Next.js 15.5.22 production build passed; signature gate ended SIGNED"
+        },
+        {
+          "command": "in-app browser primary journey",
+          "exit_status": 0,
+          "output": "Synthetic sample produced 5 findings without leaking the sample email; GitHub published HMAC vector returned MATCH; malformed JSON rendered a specific error"
+        },
+        {
+          "command": "in-app browser 320x800 responsive check",
+          "exit_status": 0,
+          "output": "clientWidth=320, scrollWidth=320, horizontalOverflow=false, undersizedTargets=[]"
+        },
+        {
+          "command": "footer contrast calculation from computed browser colors",
+          "exit_status": 0,
+          "output": "foreground rgb(37,40,43), background rgb(242,239,231), contrast ratio 12.9:1"
+        },
+        {
+          "command": "local production curl checks",
+          "exit_status": 0,
+          "output": "HTTP 200; X-Built-By and security headers present; one humans.txt author link; author, creator, developer, JSON-LD metadata present; /api/health returned status ok"
+        },
+        {
+          "command": "audit_ai_tells.py README.md docs and UI copy",
+          "exit_status": 0,
+          "output": "No configured AI-writing tells found"
+        }
+      ],
+      "signature_output": "IAMUVIN SIGNATURE GATE: all seven checks PASS; final line SIGNED; exit 0",
+      "lifecycle_status": "verified",
+      "revenue_amount_usd": null,
+      "customer_count": null,
+      "revenue_status": "unverified",
+      "analytics_events": {
+        "acquisition": "workbench_viewed",
+        "activation": "payload_analyzed",
+        "retention": "fixture_exported",
+        "paid_conversion": "pricing_intent",
+        "feedback": "feedback_intent"
+      },
+      "remaining_risks": [
+        "Heuristic detection can miss secrets or create false positives",
+        "Demand and willingness to pay are unverified",
+        "GitHub device authorization is pending before private remote creation and push",
+        "No live domain or production deployment was authorized or verified"
+      ],
+      "next_action": "Create the verified private GitHub remote, push main, then record the remote evidence"
+    }
+  ],
+  "failures": [
+    {
+      "node": "verify",
+      "attempt": 1,
+      "command": "local production browser load",
+      "exit_status": 500,
+      "fingerprint": "ERR_INVALID_CHAR:X-Built-By",
+      "output": "Node rejected U+2014 in the HTTP header value; the transport-only header value was percent-encoded and the route returned 200"
+    },
+    {
+      "node": "verify",
+      "attempt": 2,
+      "command": "pnpm verify",
+      "exit_status": 1,
+      "fingerprint": "eslint:next-env.d.ts:triple-slash-reference",
+      "output": "Next.js generated next-env.d.ts was excluded from ESLint; the full gate then passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 3,
+      "command": "pnpm audit --audit-level high",
+      "exit_status": 1,
+      "fingerprint": "audit:sharp-postcss-brace-expansion",
+      "output": "Patched transitive versions were pinned in pnpm-workspace.yaml; the rerun reported no known vulnerabilities"
+    },
+    {
+      "node": "ship",
+      "attempt": 1,
+      "command": "ssh -T git@github.com",
+      "exit_status": 255,
+      "fingerprint": "github:ssh:publickey-denied",
+      "output": "No GitHub SSH credential is available; browser device authorization was started for GitHub CLI"
+    }
+  ],
+  "last_evidence": [
+    "No existing portfolio-state.json or project repository was found in the workspace",
+    "GitHub CLI reported an invalid token for account uvindev",
+    "FixtureSafe was selected after comparing three current opportunities",
+    "pnpm verify exited 0 after eight tests, a production build, and the signature gate",
+    "pnpm audit --audit-level high reported no known vulnerabilities after patched overrides",
+    "The local production browser journey and 320 px responsive checks passed"
+  ],
+  "next_action": "Complete GitHub device authorization, create the private FixtureSafe repository, and push main",
+  "updated_at": "2026-07-31T16:48:50Z"
+}
