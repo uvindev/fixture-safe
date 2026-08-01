@@ -3,7 +3,7 @@
   "loop_id": "iamuvin-1000-projects",
   "goal": "Ship 1000 distinct useful revenue-capable software projects",
   "status": "completed",
-  "iteration": 3,
+  "iteration": 4,
   "limits": {
     "projects_per_task": 1,
     "selection_attempts": 3,
@@ -23,7 +23,7 @@
     "ship",
     "record"
   ],
-  "completed_project_count": 3,
+  "completed_project_count": 4,
   "projects": [
     {
       "id": 1,
@@ -363,6 +363,130 @@
         "No live checkout or deployment is authorized"
       ],
       "next_action": "Deploy to an approved no-cost host, recruit [TARGET] 5 Vercel implementation teams, and measure contract_analyzed plus team_interest without collecting environment values"
+    },
+    {
+      "id": 4,
+      "name": "TurnstileProof",
+      "repository_url": "https://github.com/uvindev/turnstile-proof",
+      "local_path": "/Users/Desktop - Uvin’s MacBook Pro/UvinDev/dev/codex_1000_apps/turnstile-proof",
+      "product_type": "local-first web application",
+      "target_user": "Web teams and implementation agencies reviewing Cloudflare Turnstile integrations before release",
+      "recurring_job": "Check production client code, server verification, automated tests, and allowed hostnames before merging a protected form",
+      "paid_value": "Repository-wide CI enforcement, multi-form inventory, reviewed exceptions, policy history, and pull-request annotations",
+      "monetization_model": "Free single-integration workbench with a Team subscription hypothesis at [TARGET] $18 per team/month",
+      "distribution_channel": "GitHub, Cloudflare Turnstile search intent, implementation agencies, and application-security communities",
+      "evidence_sources": [
+        "https://developers.cloudflare.com/turnstile/get-started/server-side-validation/",
+        "https://developers.cloudflare.com/turnstile/troubleshooting/testing/",
+        "https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/widget-configurations/",
+        "https://developers.cloudflare.com/turnstile/additional-configuration/hostname-management/",
+        "https://developers.cloudflare.com/turnstile/turnstile-analytics/token-validation/",
+        "https://developers.cloudflare.com/turnstile/plans/",
+        "https://www.w3.org/TR/CSP/",
+        "https://report-uri.com/",
+        "https://docs.stripe.com/api/versioning"
+      ],
+      "assumptions": [
+        "[UNVERIFIED] Web teams will run a local pre-merge Turnstile integration check alongside runtime testing",
+        "[UNVERIFIED] Agencies and teams will pay for repository enforcement, multi-form inventory, reviewed exceptions, and history"
+      ],
+      "node_status": {
+        "orient": "completed",
+        "research": "completed",
+        "specify": "completed",
+        "build": "completed",
+        "verify": "completed",
+        "ship": "completed",
+        "record": "completed"
+      },
+      "attempts": {
+        "orient": 1,
+        "research": 1,
+        "specify": 1,
+        "build": 3,
+        "verify": 4,
+        "ship": 1,
+        "record": 1
+      },
+      "commit_sha": "1d779cafe9b43b266f7d2ce9cbbf6a2be582c488",
+      "pushed_branch": "main",
+      "verification": [
+        {
+          "command": "node -e JSON.parse(portfolio-state.json and package.json)",
+          "exit_status": 0,
+          "output": "STATE_SCHEMA_OK and PACKAGE_JSON_OK"
+        },
+        {
+          "command": "deterministic credential-pattern scan",
+          "exit_status": 0,
+          "output": "SECRET_SCAN_OK"
+        },
+        {
+          "command": "pnpm verify",
+          "exit_status": 0,
+          "output": "Prettier passed; ESLint passed; TypeScript passed; 1 test file and 14 tests passed; Next.js 15.5.22 production build passed; signature gate ended SIGNED"
+        },
+        {
+          "command": "pnpm audit --audit-level high",
+          "exit_status": 0,
+          "output": "No known vulnerabilities found"
+        },
+        {
+          "command": "in-app browser primary journey",
+          "exit_status": 0,
+          "output": "Risky sample returned 11 findings with 3 blockers; the complete sample returned zero findings and seven passing controls; empty input rendered a specific recovery message"
+        },
+        {
+          "command": "in-app browser source-privacy check",
+          "exit_status": 0,
+          "output": "A private-project-marker added to submitted client code was absent from turnstile-proof.json"
+        },
+        {
+          "command": "in-app browser 320x800 responsive check",
+          "exit_status": 0,
+          "output": "clientWidth=320, scrollWidth=320, horizontalOverflow=false, undersizedTargets=[]"
+        },
+        {
+          "command": "footer contrast calculation from computed browser colors",
+          "exit_status": 0,
+          "output": "foreground rgb(217,215,206), background rgb(21,23,20), contrast ratio 12.5:1"
+        },
+        {
+          "command": "local production curl checks",
+          "exit_status": 0,
+          "output": "HTTP 200; X-Built-By and security headers present; /api/health returned status ok with sourceStorage false; humans.txt present"
+        },
+        {
+          "command": "audit_ai_tells.py README.md docs and UI copy",
+          "exit_status": 0,
+          "output": "No configured AI-writing tells found"
+        },
+        {
+          "command": "git ls-remote --heads origin main and gh repo view",
+          "exit_status": 0,
+          "output": "1d779cafe9b43b266f7d2ce9cbbf6a2be582c488 refs/heads/main; repository visibility PRIVATE; default branch main"
+        }
+      ],
+      "signature_output": "IAMUVIN SIGNATURE GATE: all seven checks PASS; final line SIGNED; exit 0",
+      "lifecycle_status": "pushed",
+      "revenue_amount_usd": null,
+      "customer_count": null,
+      "revenue_status": "unverified",
+      "analytics_events": {
+        "acquisition": "workbench_viewed",
+        "activation": "integration_audited",
+        "retention": "control_report_copied",
+        "paid_conversion": "team_interest",
+        "feedback": "feedback_intent"
+      },
+      "remaining_risks": [
+        "Static snippet analysis can miss wrappers, generated clients, and cross-file control flow",
+        "A clean report cannot prove that Siteverify succeeds or that bots are blocked in production",
+        "Cloudflare documentation and test credentials can change after release",
+        "Demand and willingness to pay are unverified",
+        "No live checkout or deployment is authorized"
+      ],
+      "next_action": "Deploy to an approved no-cost host, recruit [TARGET] 5 Turnstile implementation teams, and measure integration_audited plus team_interest without collecting source code"
     }
   ],
   "failures": [
@@ -469,16 +593,48 @@
       "exit_status": 7,
       "fingerprint": "runtime:sandbox-loopback-isolation",
       "output": "The sandboxed curl could not reach the already-running server; the approved localhost probe returned HTTP 200 with the expected headers, health payload, and humans.txt"
+    },
+    {
+      "node": "build",
+      "attempt": 1,
+      "command": "pnpm install --offline",
+      "exit_status": 1,
+      "fingerprint": "pnpm-offline-missing-caniuse-lite-tarball",
+      "output": "The local pnpm store lacked one pinned caniuse-lite tarball; the approved online install completed from the lockfile"
+    },
+    {
+      "node": "build",
+      "attempt": 2,
+      "command": "pnpm test",
+      "exit_status": 1,
+      "fingerprint": "vitest:turnstile-sample-finding-order",
+      "output": "The sample assertion did not match the analyzer's deterministic severity and surface ordering; the assertion was corrected and all 14 tests passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 1,
+      "command": "pnpm verify",
+      "exit_status": 1,
+      "fingerprint": "eslint:react-no-unescaped-entities",
+      "output": "Three JSX apostrophes failed react/no-unescaped-entities; typographic apostrophes replaced them and the full gate passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 3,
+      "command": "in-app browser 320x800 responsive check",
+      "exit_status": 1,
+      "fingerprint": "a11y:team-link-width-41",
+      "output": "The Team navigation link measured 41px wide; navigation links now have a 44px minimum width and the rerun returned undersizedTargets=[]"
     }
   ],
   "last_evidence": [
-    "Iterations 1 and 2 were complete and pushed with no active portfolio project",
-    "EnvParity was selected after comparing environment-contract drift, GitHub Actions security preflight, and Vercel cron release checking",
-    "pnpm verify exited 0 after 11 tests, a production build, and the signature gate ending SIGNED",
+    "Iterations 1 through 3 were complete and pushed with no active portfolio project",
+    "TurnstileProof was selected after comparing Turnstile integration review, CSP release diffing, and Stripe API-version migration checking",
+    "pnpm verify exited 0 after 14 tests, a production build, and the signature gate ending SIGNED",
     "pnpm audit --audit-level high reported no known vulnerabilities",
-    "The production browser journey passed sample, complete, privacy, empty-input, and 320px responsive checks",
-    "Private repository https://github.com/uvindev/env-parity was created and remote main matched d0d5b1c28d3b7f852ca3f56ec0fdf28568c8e9d8"
+    "The production browser journey passed risky, complete, source-privacy, empty-input, and 320px responsive checks",
+    "Private repository https://github.com/uvindev/turnstile-proof was created and remote main matched 1d779cafe9b43b266f7d2ce9cbbf6a2be582c488"
   ],
-  "next_action": "Start project 4 or authorize a no-cost EnvParity deployment and a [TARGET] 5-team validation cohort",
-  "updated_at": "2026-08-01T06:37:21Z"
+  "next_action": "Start project 5 or authorize a no-cost TurnstileProof deployment and a [TARGET] 5-team validation cohort",
+  "updated_at": "2026-08-01T07:20:28Z"
 }
