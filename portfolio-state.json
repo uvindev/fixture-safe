@@ -3,7 +3,7 @@
   "loop_id": "iamuvin-1000-projects",
   "goal": "Ship 1000 distinct useful revenue-capable software projects",
   "status": "completed",
-  "iteration": 4,
+  "iteration": 5,
   "limits": {
     "projects_per_task": 1,
     "selection_attempts": 3,
@@ -12,7 +12,7 @@
     "elapsed_hours": 8,
     "unapproved_spend_usd": 0
   },
-  "active_node": "completed",
+  "active_node": null,
   "active_project": null,
   "completed_nodes": [
     "orient",
@@ -23,7 +23,7 @@
     "ship",
     "record"
   ],
-  "completed_project_count": 4,
+  "completed_project_count": 5,
   "projects": [
     {
       "id": 1,
@@ -487,6 +487,130 @@
         "No live checkout or deployment is authorized"
       ],
       "next_action": "Deploy to an approved no-cost host, recruit [TARGET] 5 Turnstile implementation teams, and measure integration_audited plus team_interest without collecting source code"
+    },
+    {
+      "id": 5,
+      "name": "ImportDryRun",
+      "repository_url": "https://github.com/uvindev/import-dry-run",
+      "local_path": "/Users/Desktop - Uvin’s MacBook Pro/UvinDev/dev/codex_1000_apps/import-dry-run",
+      "product_type": "local-first web application",
+      "target_user": "SaaS support, onboarding, and operations teams triaging customer CSV imports",
+      "recurring_job": "Validate a customer CSV against the product import contract before the file reaches production data",
+      "paid_value": "Shared versioned contracts, intake links, API and CI enforcement, import history, and team workspaces",
+      "monetization_model": "Free single-file dry run with a Team subscription hypothesis at [TARGET] $29 per team/month",
+      "distribution_channel": "GitHub, CSV import search intent, SaaS support and operations communities, and implementation agencies",
+      "evidence_sources": [
+        "https://www.rfc-editor.org/rfc/rfc4180",
+        "https://owasp.org/www-community/attacks/CSV_Injection",
+        "https://dromo.io/pricing",
+        "https://dromo.io/",
+        "https://www.oneschema.co/pricing",
+        "https://docs.oneschema.co/docs/validations",
+        "https://flatfile.com/pricing/",
+        "https://developers.google.com/identity/protocols/oauth2/web-server",
+        "https://easydmarc.com/pricing/easydmarc/businesses"
+      ],
+      "assumptions": [
+        "[UNVERIFIED] SaaS support teams will use a browser-local contract check before handing CSV files to engineering or production importers",
+        "[UNVERIFIED] Small teams will pay for shared contracts, intake links, API enforcement, and import history"
+      ],
+      "node_status": {
+        "orient": "completed",
+        "research": "completed",
+        "specify": "completed",
+        "build": "completed",
+        "verify": "completed",
+        "ship": "completed",
+        "record": "completed"
+      },
+      "attempts": {
+        "orient": 1,
+        "research": 1,
+        "specify": 1,
+        "build": 3,
+        "verify": 4,
+        "ship": 1,
+        "record": 1
+      },
+      "commit_sha": "fe3cd52a8f481b74ef490e4725b0980d310e4402",
+      "pushed_branch": "main",
+      "verification": [
+        {
+          "command": "node -e JSON.parse(portfolio-state.json and package.json)",
+          "exit_status": 0,
+          "output": "STATE_SCHEMA_OK and PACKAGE_JSON_OK"
+        },
+        {
+          "command": "deterministic credential-pattern scan",
+          "exit_status": 0,
+          "output": "SECRET_SCAN_OK"
+        },
+        {
+          "command": "static unsafe-API and AI-writing-pattern scans",
+          "exit_status": 0,
+          "output": "No secrets or configured AI-writing tells found; the only flagged browser API is sanitized JSON-LD metadata"
+        },
+        {
+          "command": "pnpm verify",
+          "exit_status": 0,
+          "output": "Prettier passed; ESLint passed; TypeScript passed; 1 test file and 20 tests passed; Next.js 15.5.22 static production build passed; signature gate ended SIGNED"
+        },
+        {
+          "command": "pnpm audit --prod",
+          "exit_status": 0,
+          "output": "No known vulnerabilities found"
+        },
+        {
+          "command": "in-app browser primary journey",
+          "exit_status": 0,
+          "output": "Rejected sample produced a blocked receipt with 12 located findings across 4 rows; accepted sample produced ready with 3 valid rows and zero findings; empty input rendered a specific recovery message"
+        },
+        {
+          "command": "in-app browser output-privacy and clipboard check",
+          "exit_status": 0,
+          "output": "PRIVATE-CUSTOMER-MARKER was absent from the JSON artifact, error CSV, and copied clipboard report"
+        },
+        {
+          "command": "in-app browser 320x800 responsive check",
+          "exit_status": 0,
+          "output": "clientWidth=320, scrollWidth=320, horizontalOverflow=false, all action buttons at least 44px high, and the 850px finding table contained in its own scroll frame"
+        },
+        {
+          "command": "footer contrast calculation from computed browser colors",
+          "exit_status": 0,
+          "output": "foreground rgb(244,239,229), background rgb(13,21,38), contrast ratio 15.9:1"
+        },
+        {
+          "command": "production browser console check",
+          "exit_status": 0,
+          "output": "No warnings or errors; console output contained only the IAMUVIN runtime badge"
+        },
+        {
+          "command": "git rev-parse HEAD and origin/main plus gh repo view",
+          "exit_status": 0,
+          "output": "fe3cd52a8f481b74ef490e4725b0980d310e4402 matched origin/main; repository visibility PRIVATE; default branch main"
+        }
+      ],
+      "signature_output": "IAMUVIN SIGNATURE GATE: all seven checks PASS; final line SIGNED; exit 0",
+      "lifecycle_status": "pushed",
+      "revenue_amount_usd": null,
+      "customer_count": null,
+      "revenue_status": "unverified",
+      "analytics_events": {
+        "acquisition": "workbench_viewed",
+        "activation": "import_checked",
+        "retention": "error_report_copied",
+        "paid_conversion": "team_interest",
+        "feedback": "feedback_intent"
+      },
+      "remaining_risks": [
+        "The first release accepts UTF-8 comma-delimited input and caps analysis at 5,000 data rows",
+        "A contract check cannot detect corruption introduced before export or during a later production import",
+        "Formula-like cell detection cannot provide a universal spreadsheet sanitization strategy",
+        "Demand and willingness to pay are unverified",
+        "No live checkout or deployment is authorized"
+      ],
+      "next_action": "Deploy to an approved no-cost host, recruit [TARGET] 5 SaaS support and onboarding teams, and measure import_checked plus team_interest without collecting CSV or contract contents"
     }
   ],
   "failures": [
@@ -625,16 +749,56 @@
       "exit_status": 1,
       "fingerprint": "a11y:team-link-width-41",
       "output": "The Team navigation link measured 41px wide; navigation links now have a 44px minimum width and the rerun returned undersizedTargets=[]"
+    },
+    {
+      "node": "build",
+      "attempt": 1,
+      "command": "pnpm install --offline",
+      "exit_status": 1,
+      "fingerprint": "pnpm-offline-missing-eslint-eslintrc-tarball",
+      "output": "The local pnpm store lacked the pinned @eslint/eslintrc tarball; the approved online install completed with exact versions"
+    },
+    {
+      "node": "build",
+      "attempt": 2,
+      "command": "pnpm test",
+      "exit_status": 1,
+      "fingerprint": "vitest:rejected-sample-pattern-gap",
+      "output": "The rejected fixture claimed to exercise the ID pattern rule while every non-empty ID matched; one fixture ID was made realistically malformed and all 20 final tests passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 1,
+      "command": "pnpm start --hostname 127.0.0.1 -p 3005",
+      "exit_status": 1,
+      "fingerprint": "runtime:sandbox-listen-eperm",
+      "output": "The sandbox denied the localhost listener; the approved production server started on 127.0.0.1:3005 and the browser journey passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 2,
+      "command": "in-app browser 320x800 responsive check",
+      "exit_status": 1,
+      "fingerprint": "a11y:export-button-height-34",
+      "output": "The two export buttons measured 34px high; their minimum height was raised to 44px and the rerun returned 44px with no page overflow"
+    },
+    {
+      "node": "verify",
+      "attempt": 3,
+      "command": "pnpm audit --prod",
+      "exit_status": 1,
+      "fingerprint": "audit:sandbox-registry-enotfound",
+      "output": "The sandbox could not resolve the npm advisory endpoint; the approved audit rerun reported no known vulnerabilities"
     }
   ],
   "last_evidence": [
-    "Iterations 1 through 3 were complete and pushed with no active portfolio project",
-    "TurnstileProof was selected after comparing Turnstile integration review, CSP release diffing, and Stripe API-version migration checking",
-    "pnpm verify exited 0 after 14 tests, a production build, and the signature gate ending SIGNED",
-    "pnpm audit --audit-level high reported no known vulnerabilities",
-    "The production browser journey passed risky, complete, source-privacy, empty-input, and 320px responsive checks",
-    "Private repository https://github.com/uvindev/turnstile-proof was created and remote main matched 1d779cafe9b43b266f7d2ce9cbbf6a2be582c488"
+    "Iterations 1 through 4 were complete and pushed with no active portfolio project",
+    "ImportDryRun was selected after comparing CSV import dry runs, OAuth redirect review, and DMARC simulation",
+    "pnpm verify exited 0 after 20 tests, a static production build, and the signature gate ending SIGNED",
+    "pnpm audit --prod reported no known vulnerabilities",
+    "The production browser journey passed rejected, accepted, output-privacy, clipboard, empty-input, console, and 320px responsive checks",
+    "Private repository https://github.com/uvindev/import-dry-run was created and remote main matched fe3cd52a8f481b74ef490e4725b0980d310e4402"
   ],
-  "next_action": "Start project 5 or authorize a no-cost TurnstileProof deployment and a [TARGET] 5-team validation cohort",
-  "updated_at": "2026-08-01T07:20:28Z"
+  "next_action": "Start iteration 6 by orienting across the five pushed projects and researching three distinct recurring jobs",
+  "updated_at": "2026-08-01T08:27:27Z"
 }
