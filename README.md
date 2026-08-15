@@ -2,7 +2,7 @@
 
 FixtureSafe turns a captured webhook into a sanitized test fixture without sending the payload to a server. It scans JSON for likely secrets and personal data, shows every changed path, verifies GitHub, Stripe, or generic HMAC-SHA256 signatures against the untouched raw text, and exports a redacted fixture with an evidence manifest.
 
-The product is for integration engineers and agencies that need to move production-shaped events into bug reports, repositories, or AI-assisted debugging. The free workbench handles one payload at a time. A proposed Team plan adds shared policies, batch fixture packs, and a CI check at `[TARGET]` $12 per team/month. No customer or revenue has been verified.
+The product is for integration engineers and agencies that need to move production-shaped events into bug reports, repositories, or AI-assisted debugging. The free workbench handles one payload at a time. No customer or revenue has been verified.
 
 ## Local setup
 
