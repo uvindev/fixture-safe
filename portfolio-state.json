@@ -3,7 +3,7 @@
   "loop_id": "iamuvin-1000-projects",
   "goal": "Ship 1000 distinct useful revenue-capable software projects",
   "status": "completed",
-  "iteration": 7,
+  "iteration": 8,
   "limits": {
     "projects_per_task": 1,
     "selection_attempts": 3,
@@ -23,7 +23,7 @@
     "ship",
     "record"
   ],
-  "completed_project_count": 7,
+  "completed_project_count": 8,
   "projects": [
     {
       "id": 1,
@@ -843,6 +843,125 @@
         "No live checkout or deployment is authorized"
       ],
       "next_action": "Deploy to an approved no-cost host, recruit [TARGET] 5 platform teams or Next.js agencies, and measure manifest_simulated plus team_interest without collecting manifest contents"
+    },
+    {
+      "id": 8,
+      "name": "AgingDesk",
+      "repository_url": "https://github.com/uvindev/aging-desk",
+      "local_path": "/Users/Desktop - Uvin’s MacBook Pro/UvinDev/dev/codex_1000_apps/aging-desk",
+      "product_type": "local-first web application",
+      "target_user": "Small agencies, consultancies, bookkeepers, and finance operators who review exported open invoices without a dedicated accounts-receivable automation system",
+      "recurring_job": "Turn an open-invoice CSV into currency-safe aging buckets and an owner-specific collection queue during a weekly receivables review",
+      "paid_value": "Shared collection queues, scheduled imports, accounting integrations, reminder history, role-based ownership, and collection-policy enforcement",
+      "monetization_model": "Free browser-local CSV triage with a Team subscription hypothesis at [TARGET] $19 per workspace/month",
+      "distribution_channel": "GitHub, accounts-receivable spreadsheet search intent, bookkeeping communities, and agency operations networks",
+      "evidence_sources": [
+        "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounts-receivable-reports/run-accounts-receivable-aging-report/L4N7PC2hg_US_en_US",
+        "https://central.xero.com/s/article/Aged-Receivables-Summary-report-New-US",
+        "https://www.xero.com/us/guides/accounts-receivable-aging-report/",
+        "https://www.chaserhq.com/chaser-pricing",
+        "https://help.chaserhq.com/get-started-using-chaser",
+        "https://www.journalofaccountancy.com/issues/2025/mar/doing-accounts-receivable-aging-reports-in-excel/",
+        "https://www.avo.app/pricing",
+        "https://www.twilio.com/docs/segment/protocols",
+        "https://docs.github.com/en/actions/reference/security/secure-use",
+        "https://docs.zizmor.sh/",
+        "https://www.stepsecurity.io/pricing",
+        "https://www.postgresql.org/docs/16/sql-altertable.html",
+        "https://www.bytebase.com/pricing/"
+      ],
+      "assumptions": [
+        "[UNVERIFIED] Small service businesses with CSV-accessible invoice data need a faster weekly collection queue without migrating their accounting stack",
+        "[UNVERIFIED] Teams will pay for shared ownership, scheduled imports, reminder history, accounting integrations, and policy enforcement"
+      ],
+      "node_status": {
+        "orient": "completed",
+        "research": "completed",
+        "specify": "completed",
+        "build": "completed",
+        "verify": "completed",
+        "ship": "completed",
+        "record": "completed"
+      },
+      "attempts": {
+        "orient": 1,
+        "research": 1,
+        "specify": 1,
+        "build": 5,
+        "verify": 7,
+        "ship": 1,
+        "record": 1
+      },
+      "commit_sha": "67c121ea03488726bcbc6ab72c1b3f064b591e46",
+      "pushed_branch": "main",
+      "verification": [
+        {
+          "command": "pnpm verify",
+          "exit_status": 0,
+          "output": "Prettier passed; ESLint passed; TypeScript passed; 1 test file and 36 tests passed; Next.js 15.5.22 produced static / and /_not-found routes; signature gate ended SIGNED"
+        },
+        {
+          "command": "pnpm audit --prod",
+          "exit_status": 0,
+          "output": "No known vulnerabilities found after pinning patched sharp 0.35.0, postcss 8.5.23, and nanoid 3.3.18 transitive versions"
+        },
+        {
+          "command": "deterministic credential, unsafe-API, test-focus, placeholder, and oversized-source scans",
+          "exit_status": 0,
+          "output": "No credential patterns, unsafe execution primitives, focused or skipped tests, lorem placeholders, console clearing, or oversized authored source files found; static escaped JSON-LD is documented"
+        },
+        {
+          "command": "in-app browser primary and failure journeys",
+          "exit_status": 0,
+          "output": "Review sample returned REVIEW, 8 imported rows, 6 active invoices, 5 overdue invoices, 1 invalid row, 1 paid exclusion, GBP/USD ledgers, six prioritized rows, and AR001/2/3/4/6/7; current sample returned CURRENT with four active invoices and zero findings; missing columns, malformed quoting, and empty input returned specific recovery messages; audit copy confirmed"
+        },
+        {
+          "command": "in-app browser responsive and accessibility checks",
+          "exit_status": 0,
+          "output": "At 320x800 the page had zero horizontal overflow, all buttons were at least 48px high, tables scrolled within 292px frames, and the footer rendered; at 375px the page had zero horizontal overflow; primary focus outlines rendered solid. Full Tab traversal remains a manual public-deployment check because the browser runtime did not advance focus"
+        },
+        {
+          "command": "production browser console and branded route checks",
+          "exit_status": 0,
+          "output": "Each inspected production load emitted one IAMUVIN badge; no warnings or errors were recorded; the 404 route returned the branded heading, return link, and Uvin attribution"
+        },
+        {
+          "command": "local production curl checks",
+          "exit_status": 0,
+          "output": "HTTP 200; HTTP 404 on an unknown route; X-Built-By, CSP, HSTS, MIME, referrer, permissions, opener, and frame headers present; canonical humans.txt returned"
+        },
+        {
+          "command": "footer contrast calculation",
+          "exit_status": 0,
+          "output": "Primary footer text contrast 15.58:1 and secondary footer text contrast 10.41:1"
+        },
+        {
+          "command": "git rev-parse HEAD and origin/main plus gh repo view",
+          "exit_status": 0,
+          "output": "67c121ea03488726bcbc6ab72c1b3f064b591e46 matched origin/main; repository visibility PRIVATE; default branch main; worktree clean"
+        }
+      ],
+      "signature_output": "IAMUVIN SIGNATURE GATE: all seven checks PASS; final line SIGNED; exit 0",
+      "lifecycle_status": "pushed",
+      "revenue_amount_usd": null,
+      "customer_count": null,
+      "revenue_status": "unverified",
+      "analytics_events": {
+        "acquisition": "desk_viewed",
+        "activation": "invoices_triaged",
+        "retention": "collection_queue_exported",
+        "paid_conversion": "team_interest",
+        "feedback": "feedback_intent"
+      },
+      "remaining_risks": [
+        "Version 0.1 is a deterministic review surface, not an accounting ledger or source of truth",
+        "Amounts in different currencies remain separate and are never converted or summed together",
+        "Invoice status, amount, and due dates are accepted from the supplied CSV and are not independently verified",
+        "The product does not predict payment dates, send reminders, collect money, or provide accounting advice",
+        "Demand and willingness to pay are unverified",
+        "No live checkout, outreach, or deployment is authorized"
+      ],
+      "next_action": "Deploy to an approved no-cost host, recruit [TARGET] 5 small service-business finance operators, and measure invoices_triaged plus team_interest without collecting invoice contents"
     }
   ],
   "failures": [
@@ -1109,16 +1228,97 @@
       "exit_status": 1,
       "fingerprint": "audit:sandbox-registry-enotfound",
       "output": "The sandbox could not resolve the npm advisory endpoint; the approved audit rerun reported no known vulnerabilities"
+    },
+    {
+      "node": "build",
+      "attempt": 1,
+      "command": "pnpm install --offline",
+      "exit_status": 1,
+      "fingerprint": "pnpm-offline-missing-eslint-eslintrc-tarball",
+      "output": "The local pnpm store lacked the pinned @eslint/eslintrc tarball; the approved online install completed with exact versions"
+    },
+    {
+      "node": "build",
+      "attempt": 2,
+      "command": "pnpm install",
+      "exit_status": 130,
+      "fingerprint": "pnpm:sandbox-registry-enotfound",
+      "output": "The sandbox could not resolve the npm registry and the retrying install was interrupted; the approved install completed with exact versions"
+    },
+    {
+      "node": "build",
+      "attempt": 3,
+      "command": "pnpm test",
+      "exit_status": 1,
+      "fingerprint": "vitest:alias-resolution",
+      "output": "Vitest could not resolve the @ path alias; the project-root alias was added to vitest.config.ts"
+    },
+    {
+      "node": "build",
+      "attempt": 4,
+      "command": "pnpm test",
+      "exit_status": 1,
+      "fingerprint": "vitest:concentration-sample-expectation",
+      "output": "Two assertions exposed an incorrect concentration expectation and a current sample above the [TARGET] 35% marker; the fixture and expectation were corrected, then all 36 tests passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 1,
+      "command": "pnpm start and localhost curl",
+      "exit_status": 1,
+      "fingerprint": "runtime:sandbox-loopback-isolation",
+      "output": "The sandbox denied the localhost listener and could not reach the approved server; approved listener and curl probes completed the browser and header checks"
+    },
+    {
+      "node": "verify",
+      "attempt": 2,
+      "command": "in-app browser queue download event",
+      "exit_status": 1,
+      "fingerprint": "browser:blob-download-event-unobservable",
+      "output": "The in-app browser did not expose the Blob-backed download event; CSV generation is covered by automated tests and audit-copy behavior passed in the browser"
+    },
+    {
+      "node": "verify",
+      "attempt": 3,
+      "command": "pnpm verify after prior build",
+      "exit_status": 1,
+      "fingerprint": "eslint:generated-next-output",
+      "output": "ESLint scanned .next after a previous production build; generated directories were excluded in the flat config"
+    },
+    {
+      "node": "verify",
+      "attempt": 4,
+      "command": "pnpm verify",
+      "exit_status": 1,
+      "fingerprint": "eslint:next-env-generated-reference",
+      "output": "Next.js regenerated next-env.d.ts with an internal route-types reference; the generated file was excluded from ESLint and the repeatability gate passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 5,
+      "command": "pnpm audit --prod --audit-level=high",
+      "exit_status": 1,
+      "fingerprint": "audit:sharp-postcss-nanoid",
+      "output": "Four high transitive advisories were reported; patched sharp, postcss, and nanoid versions were pinned and the high-severity rerun passed"
+    },
+    {
+      "node": "verify",
+      "attempt": 6,
+      "command": "pnpm audit --prod",
+      "exit_status": 1,
+      "fingerprint": "audit:postcss-incomplete-fix",
+      "output": "A remaining moderate PostCSS advisory required 8.5.23; the override was raised and the final audit reported no known vulnerabilities"
     }
   ],
   "last_evidence": [
-    "Iterations 1 through 7 are pushed and each local main matches origin/main",
-    "CronOverlap simulates standard five-field Vercel cron manifests in UTC, including simultaneous starts, assumed run overlap, ownership, protection, and default-duration findings",
-    "The deterministic gate passed formatting, lint, TypeScript, 29 tests, the Next.js 15.5.22 production build, and the IAMUVIN signature gate ending SIGNED",
-    "The production browser verified conflict, clear, plain vercel.json, malformed, empty, copy, 320x800 responsive, contrast, and console-badge paths",
-    "The production dependency audit reported no known vulnerabilities",
-    "uvindev/cron-overlap is private on main at a13e0026693104ba1d813545cb439a4c2aa15fd9"
+    "Iterations 1 through 8 are pushed; AgingDesk local main and origin/main both equal 67c121ea03488726bcbc6ab72c1b3f064b591e46",
+    "uvindev/aging-desk is PRIVATE with default branch main",
+    "pnpm verify exited 0 with 36 passing tests, static production routes, and final SIGNED",
+    "pnpm audit --prod reported no known vulnerabilities",
+    "Browser journeys passed for review, current, missing-column, malformed-quote, empty-input, audit-copy, responsive, console, and branded-404 behavior",
+    "Local production probes returned the expected attribution and security headers plus canonical humans.txt",
+    "Revenue and customer count remain unverified; no deployment, checkout, spend, or outreach occurred"
   ],
-  "next_action": "Start iteration 8 by orienting from this verified seven-project state and researching three non-overlapping problems",
-  "updated_at": "2026-08-01T12:51:09Z"
+  "next_action": "Start iteration 9 by orienting on portfolio state and selecting one distinct revenue-capable project",
+  "updated_at": "2026-08-15T05:47:43Z"
 }
