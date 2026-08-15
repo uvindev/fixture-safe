@@ -4,6 +4,8 @@ FixtureSafe turns a captured webhook into a sanitized test fixture without sendi
 
 The product is for integration engineers and agencies that need to move production-shaped events into bug reports, repositories, or AI-assisted debugging. The free workbench handles one payload at a time. No customer or revenue has been verified.
 
+![FixtureSafe on load: the workbench that redacts a webhook payload and verifies its signature in the browser](docs/screenshot.png)
+
 ## Local setup
 
 Requirements: Node.js 20.9 or later and pnpm 11.
